@@ -5,11 +5,11 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Containers
-  - Registry
   - Artifacts
-  - Packages
+  - Containers
   - Google Cloud
+  - Packages
+  - Registry
 url: >-
   https://raw.githubusercontent.com/api-evangelist/google-artifact-registry/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -22,10 +22,10 @@ apis:
       Google Artifact Registry is a universal package manager for managing container images, language packages, and OS packages on Google Cloud with integrated vulnerability scanning and fine-grained access control.
     humanURL: https://cloud.google.com/artifact-registry
     tags:
-      - Containers
-      - Registry
       - Artifacts
+      - Containers
       - Packages
+      - Registry
     properties:
       - type: Documentation
         url: https://cloud.google.com/artifact-registry/docs

@@ -27,6 +27,8 @@ apis:
       - Packages
       - Registry
     properties:
+      - url: openapi/google-artifact-registry-openapi.yml
+        type: OpenAPI
       - type: Documentation
         url: https://cloud.google.com/artifact-registry/docs
       - type: Getting Started

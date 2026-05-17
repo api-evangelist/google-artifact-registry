@@ -31,7 +31,7 @@ apis:
         type: OpenAPI
       - type: Documentation
         url: https://cloud.google.com/artifact-registry/docs
-      - type: Getting Started
+      - type: GettingStarted
         url: https://cloud.google.com/artifact-registry/docs/overview
       - type: Pricing
         url: https://cloud.google.com/artifact-registry/pricing
@@ -40,17 +40,17 @@ common:
     url: https://cloud.google.com/artifact-registry
   - type: Documentation
     url: https://cloud.google.com/artifact-registry/docs
-  - type: Getting Started
+  - type: GettingStarted
     url: https://cloud.google.com/artifact-registry/docs/overview
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/googleapis
   - type: Pricing
     url: https://cloud.google.com/artifact-registry/pricing
   - type: Blog
     url: https://cloud.google.com/blog/
-  - type: Status
+  - type: StatusPage
     url: https://status.cloud.google.com/
-  - type: Sign Up
+  - type: SignUp
     url: https://cloud.google.com/free
   - type: Integrations
     url: https://cloud.google.com/marketplace

@@ -1,0 +1,828 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Google Artifact Registry API
+  description: 'Google Artifact Registry API. 18 operations. Lead operation: Get a resource (project settings, location, vpcsc
+    config, operation). Self-contained Naftiko capability covering one Google Artifact Registry business surface.'
+  tags:
+  - Google Artifact Registry
+  - Google Artifact Registry API
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    GOOGLE_ARTIFACT_REGISTRY_API_KEY: GOOGLE_ARTIFACT_REGISTRY_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: google-artifact-registry
+    baseUri: https://artifactregistry.googleapis.com
+    description: Google Artifact Registry API business capability. Self-contained, no shared references.
+    resources:
+    - name: v1-name
+      path: /v1/{name}
+      operations:
+      - name: getresource
+        method: GET
+        description: Get a resource (project settings, location, vpcsc config, operation)
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+      - name: updateresource
+        method: PATCH
+        description: Update a resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+        - name: updateMask
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+      - name: deleteresource
+        method: DELETE
+        description: Delete a resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: name
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-dockerImages
+      path: /v1/{parent}/dockerImages
+      operations:
+      - name: listdockerimages
+        method: GET
+        description: List Docker images
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-files
+      path: /v1/{parent}/files
+      operations:
+      - name: listfiles
+        method: GET
+        description: List files in a repository
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-locations
+      path: /v1/{parent}/locations
+      operations:
+      - name: listlocations
+        method: GET
+        description: List supported locations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-mavenArtifacts
+      path: /v1/{parent}/mavenArtifacts
+      operations:
+      - name: listmavenartifacts
+        method: GET
+        description: List Maven artifacts
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-npmPackages
+      path: /v1/{parent}/npmPackages
+      operations:
+      - name: listnpmpackages
+        method: GET
+        description: List npm packages
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-packages
+      path: /v1/{parent}/packages
+      operations:
+      - name: listpackages
+        method: GET
+        description: List packages in a repository
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: pageSize
+          in: query
+          type: integer
+        - name: pageToken
+          in: query
+          type: string
+    - name: v1-parent-pythonPackages
+      path: /v1/{parent}/pythonPackages
+      operations:
+      - name: listpythonpackages
+        method: GET
+        description: List Python packages
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+    - name: v1-parent-repositories
+      path: /v1/{parent}/repositories
+      operations:
+      - name: listrepositories
+        method: GET
+        description: List repositories
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: pageSize
+          in: query
+          type: integer
+        - name: pageToken
+          in: query
+          type: string
+      - name: createrepository
+        method: POST
+        description: Create a repository
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: repositoryId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-tags
+      path: /v1/{parent}/tags
+      operations:
+      - name: listtags
+        method: GET
+        description: List tags
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+      - name: createtag
+        method: POST
+        description: Create a tag
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: tagId
+          in: query
+          type: string
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-parent-versions
+      path: /v1/{parent}/versions
+      operations:
+      - name: listversions
+        method: GET
+        description: List versions of a package
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: parent
+          in: path
+          type: string
+          required: true
+        - name: pageSize
+          in: query
+          type: integer
+        - name: pageToken
+          in: query
+          type: string
+    - name: v1-resource}:getIamPolicy
+      path: /v1/{resource}:getIamPolicy
+      operations:
+      - name: getiampolicy
+        method: GET
+        description: Get IAM policy
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: resource
+          in: path
+          type: string
+          required: true
+    - name: v1-resource}:setIamPolicy
+      path: /v1/{resource}:setIamPolicy
+      operations:
+      - name: setiampolicy
+        method: POST
+        description: Set IAM policy on a resource
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: resource
+          in: path
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    - name: v1-resource}:testIamPermissions
+      path: /v1/{resource}:testIamPermissions
+      operations:
+      - name: testiampermissions
+        method: POST
+        description: Test IAM permissions
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: resource
+          in: path
+          type: string
+          required: true
+        - name: body
+          in: body
+          type: object
+          description: Request body (JSON).
+          required: false
+    authentication:
+      type: bearer
+      token: '{{env.GOOGLE_ARTIFACT_REGISTRY_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: google-artifact-registry-rest
+    port: 8080
+    description: REST adapter for Google Artifact Registry API. One Spectral-compliant resource per consumed operation, prefixed
+      with /v1.
+    resources:
+    - path: /v1/v1/{name}
+      name: v1-name
+      description: REST surface for v1-name.
+      operations:
+      - method: GET
+        name: getresource
+        description: Get a resource (project settings, location, vpcsc config, operation)
+        call: google-artifact-registry.getresource
+        with:
+          name: rest.name
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: PATCH
+        name: updateresource
+        description: Update a resource
+        call: google-artifact-registry.updateresource
+        with:
+          name: rest.name
+          updateMask: rest.updateMask
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: DELETE
+        name: deleteresource
+        description: Delete a resource
+        call: google-artifact-registry.deleteresource
+        with:
+          name: rest.name
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/dockerimages
+      name: v1-parent-dockerimages
+      description: REST surface for v1-parent-dockerImages.
+      operations:
+      - method: GET
+        name: listdockerimages
+        description: List Docker images
+        call: google-artifact-registry.listdockerimages
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/files
+      name: v1-parent-files
+      description: REST surface for v1-parent-files.
+      operations:
+      - method: GET
+        name: listfiles
+        description: List files in a repository
+        call: google-artifact-registry.listfiles
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/locations
+      name: v1-parent-locations
+      description: REST surface for v1-parent-locations.
+      operations:
+      - method: GET
+        name: listlocations
+        description: List supported locations
+        call: google-artifact-registry.listlocations
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/mavenartifacts
+      name: v1-parent-mavenartifacts
+      description: REST surface for v1-parent-mavenArtifacts.
+      operations:
+      - method: GET
+        name: listmavenartifacts
+        description: List Maven artifacts
+        call: google-artifact-registry.listmavenartifacts
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/npmpackages
+      name: v1-parent-npmpackages
+      description: REST surface for v1-parent-npmPackages.
+      operations:
+      - method: GET
+        name: listnpmpackages
+        description: List npm packages
+        call: google-artifact-registry.listnpmpackages
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/packages
+      name: v1-parent-packages
+      description: REST surface for v1-parent-packages.
+      operations:
+      - method: GET
+        name: listpackages
+        description: List packages in a repository
+        call: google-artifact-registry.listpackages
+        with:
+          parent: rest.parent
+          pageSize: rest.pageSize
+          pageToken: rest.pageToken
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/pythonpackages
+      name: v1-parent-pythonpackages
+      description: REST surface for v1-parent-pythonPackages.
+      operations:
+      - method: GET
+        name: listpythonpackages
+        description: List Python packages
+        call: google-artifact-registry.listpythonpackages
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/repositories
+      name: v1-parent-repositories
+      description: REST surface for v1-parent-repositories.
+      operations:
+      - method: GET
+        name: listrepositories
+        description: List repositories
+        call: google-artifact-registry.listrepositories
+        with:
+          parent: rest.parent
+          pageSize: rest.pageSize
+          pageToken: rest.pageToken
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createrepository
+        description: Create a repository
+        call: google-artifact-registry.createrepository
+        with:
+          parent: rest.parent
+          repositoryId: rest.repositoryId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/tags
+      name: v1-parent-tags
+      description: REST surface for v1-parent-tags.
+      operations:
+      - method: GET
+        name: listtags
+        description: List tags
+        call: google-artifact-registry.listtags
+        with:
+          parent: rest.parent
+        outputParameters:
+        - type: object
+          mapping: $.
+      - method: POST
+        name: createtag
+        description: Create a tag
+        call: google-artifact-registry.createtag
+        with:
+          parent: rest.parent
+          tagId: rest.tagId
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/{parent}/versions
+      name: v1-parent-versions
+      description: REST surface for v1-parent-versions.
+      operations:
+      - method: GET
+        name: listversions
+        description: List versions of a package
+        call: google-artifact-registry.listversions
+        with:
+          parent: rest.parent
+          pageSize: rest.pageSize
+          pageToken: rest.pageToken
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/resource-getiampolicy
+      name: v1-resource-getiampolicy
+      description: REST surface for v1-resource}:getIamPolicy.
+      operations:
+      - method: GET
+        name: getiampolicy
+        description: Get IAM policy
+        call: google-artifact-registry.getiampolicy
+        with:
+          resource: rest.resource
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/resource-setiampolicy
+      name: v1-resource-setiampolicy
+      description: REST surface for v1-resource}:setIamPolicy.
+      operations:
+      - method: POST
+        name: setiampolicy
+        description: Set IAM policy on a resource
+        call: google-artifact-registry.setiampolicy
+        with:
+          resource: rest.resource
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+    - path: /v1/v1/resource-testiampermissions
+      name: v1-resource-testiampermissions
+      description: REST surface for v1-resource}:testIamPermissions.
+      operations:
+      - method: POST
+        name: testiampermissions
+        description: Test IAM permissions
+        call: google-artifact-registry.testiampermissions
+        with:
+          resource: rest.resource
+          body: rest.body
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: google-artifact-registry-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Google Artifact Registry API. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: get-resource-project-settings-location
+      description: Get a resource (project settings, location, vpcsc config, operation)
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.getresource
+      with:
+        name: tools.name
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: update-resource
+      description: Update a resource
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.updateresource
+      with:
+        name: tools.name
+        updateMask: tools.updateMask
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: delete-resource
+      description: Delete a resource
+      hints:
+        readOnly: false
+        destructive: true
+        idempotent: true
+      call: google-artifact-registry.deleteresource
+      with:
+        name: tools.name
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-docker-images
+      description: List Docker images
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listdockerimages
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-files-repository
+      description: List files in a repository
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listfiles
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-supported-locations
+      description: List supported locations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listlocations
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-maven-artifacts
+      description: List Maven artifacts
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listmavenartifacts
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-npm-packages
+      description: List npm packages
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listnpmpackages
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-packages-repository
+      description: List packages in a repository
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listpackages
+      with:
+        parent: tools.parent
+        pageSize: tools.pageSize
+        pageToken: tools.pageToken
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-python-packages
+      description: List Python packages
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listpythonpackages
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-repositories
+      description: List repositories
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listrepositories
+      with:
+        parent: tools.parent
+        pageSize: tools.pageSize
+        pageToken: tools.pageToken
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-repository
+      description: Create a repository
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-artifact-registry.createrepository
+      with:
+        parent: tools.parent
+        repositoryId: tools.repositoryId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-tags
+      description: List tags
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listtags
+      with:
+        parent: tools.parent
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: create-tag
+      description: Create a tag
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-artifact-registry.createtag
+      with:
+        parent: tools.parent
+        tagId: tools.tagId
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: list-versions-package
+      description: List versions of a package
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.listversions
+      with:
+        parent: tools.parent
+        pageSize: tools.pageSize
+        pageToken: tools.pageToken
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: get-iam-policy
+      description: Get IAM policy
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: google-artifact-registry.getiampolicy
+      with:
+        resource: tools.resource
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: set-iam-policy-resource
+      description: Set IAM policy on a resource
+      hints:
+        readOnly: false
+        destructive: false
+        idempotent: false
+      call: google-artifact-registry.setiampolicy
+      with:
+        resource: tools.resource
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.
+    - name: test-iam-permissions
+      description: Test IAM permissions
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: false
+      call: google-artifact-registry.testiampermissions
+      with:
+        resource: tools.resource
+        body: tools.body
+      outputParameters:
+      - type: object
+        mapping: $.

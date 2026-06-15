@@ -1,0 +1,411 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Artifact Registry API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Get a resource (project settings, location, vpcsc config, operation)",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get a resource (project settings, location, vpcsc config, operation)"
+    },
+    {
+      "info": {
+        "name": "Update a resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "PATCH",
+        "url": "https://artifactregistry.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "updateMask",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Update a resource"
+    },
+    {
+      "info": {
+        "name": "Delete a resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "DELETE",
+        "url": "https://artifactregistry.googleapis.com/v1/:name",
+        "params": [
+          {
+            "name": "name",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Delete a resource"
+    },
+    {
+      "info": {
+        "name": "List supported locations",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/locations",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List supported locations"
+    },
+    {
+      "info": {
+        "name": "List repositories",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/repositories",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "pageSize",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "pageToken",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "List repositories"
+    },
+    {
+      "info": {
+        "name": "Create a repository",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/repositories",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "repositoryId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a repository"
+    },
+    {
+      "info": {
+        "name": "List packages in a repository",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/packages",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "pageSize",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "pageToken",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "List packages in a repository"
+    },
+    {
+      "info": {
+        "name": "List versions of a package",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/versions",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "pageSize",
+            "value": "",
+            "type": "query"
+          },
+          {
+            "name": "pageToken",
+            "value": "",
+            "type": "query"
+          }
+        ]
+      },
+      "docs": "List versions of a package"
+    },
+    {
+      "info": {
+        "name": "List tags",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/tags",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List tags"
+    },
+    {
+      "info": {
+        "name": "Create a tag",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/tags",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          },
+          {
+            "name": "tagId",
+            "value": "",
+            "type": "query"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Create a tag"
+    },
+    {
+      "info": {
+        "name": "List files in a repository",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/files",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List files in a repository"
+    },
+    {
+      "info": {
+        "name": "List Docker images",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/dockerImages",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List Docker images"
+    },
+    {
+      "info": {
+        "name": "List Maven artifacts",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/mavenArtifacts",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List Maven artifacts"
+    },
+    {
+      "info": {
+        "name": "List npm packages",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/npmPackages",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List npm packages"
+    },
+    {
+      "info": {
+        "name": "List Python packages",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:parent/pythonPackages",
+        "params": [
+          {
+            "name": "parent",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "List Python packages"
+    },
+    {
+      "info": {
+        "name": "Set IAM policy on a resource",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://artifactregistry.googleapis.com/v1/:resource:setIamPolicy",
+        "params": [
+          {
+            "name": "resource",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Set IAM policy on a resource"
+    },
+    {
+      "info": {
+        "name": "Get IAM policy",
+        "type": "http"
+      },
+      "http": {
+        "method": "GET",
+        "url": "https://artifactregistry.googleapis.com/v1/:resource:getIamPolicy",
+        "params": [
+          {
+            "name": "resource",
+            "value": "",
+            "type": "path"
+          }
+        ]
+      },
+      "docs": "Get IAM policy"
+    },
+    {
+      "info": {
+        "name": "Test IAM permissions",
+        "type": "http"
+      },
+      "http": {
+        "method": "POST",
+        "url": "https://artifactregistry.googleapis.com/v1/:resource:testIamPermissions",
+        "params": [
+          {
+            "name": "resource",
+            "value": "",
+            "type": "path"
+          }
+        ],
+        "body": {
+          "type": "json",
+          "data": "{}"
+        }
+      },
+      "docs": "Test IAM permissions"
+    }
+  ],
+  "bundled": true
+}

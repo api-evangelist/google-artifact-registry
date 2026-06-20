@@ -5,7 +5,7 @@ description: >-
   packages on Google Cloud. It provides a single location for storing and managing artifacts with integration into
   Google Cloud CI/CD tooling, vulnerability scanning, and fine-grained access control.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Artifacts
   - Containers

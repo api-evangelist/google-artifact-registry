@@ -38,6 +38,8 @@ apis:
       - type: Pricing
         url: https://cloud.google.com/artifact-registry/pricing
 common:
+  - type: OAuthScopes
+    url: scopes/google-artifact-registry-scopes.yml
   - type: Website
     url: https://cloud.google.com/artifact-registry
   - type: Documentation

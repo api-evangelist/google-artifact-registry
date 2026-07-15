@@ -38,6 +38,8 @@ apis:
       - type: Pricing
         url: https://cloud.google.com/artifact-registry/pricing
 common:
+  - type: AgenticAccess
+    url: agentic-access/google-artifact-registry-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/google-artifact-registry-vulnerability-disclosure.yml
   - type: DomainSecurity

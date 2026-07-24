@@ -1,0 +1,156 @@
+openapi: 3.1.0
+info:
+  title: Google Artifact Registry DockerImages Google Artifact Registry API API
+  description: REST API for Google Artifact Registry, a universal package manager for container images, language packages, and OS packages on Google Cloud.
+  version: v1
+servers:
+- url: https://artifactregistry.googleapis.com
+security:
+- oauth2:
+  - https://www.googleapis.com/auth/cloud-platform
+tags:
+- name: Google Artifact Registry API
+paths:
+  /v1/{name}:
+    get:
+      summary: Get a resource (project settings, location, vpcsc config, operation)
+      operationId: getResource
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Resource response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+    patch:
+      summary: Update a resource
+      operationId: updateResource
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: updateMask
+        in: query
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Update response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+    delete:
+      summary: Delete a resource
+      operationId: deleteResource
+      parameters:
+      - name: name
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Delete response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+  /v1/{resource}:setIamPolicy:
+    post:
+      summary: Set IAM policy on a resource
+      operationId: setIamPolicy
+      parameters:
+      - name: resource
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: IAM policy response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+  /v1/{resource}:getIamPolicy:
+    get:
+      summary: Get IAM policy
+      operationId: getIamPolicy
+      parameters:
+      - name: resource
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: IAM policy response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+  /v1/{resource}:testIamPermissions:
+    post:
+      summary: Test IAM permissions
+      operationId: testIamPermissions
+      parameters:
+      - name: resource
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200':
+          description: Test permissions response
+          content:
+            application/json:
+              schema:
+                type: object
+      tags:
+      - Google Artifact Registry API
+components:
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/cloud-platform: View and manage Google Cloud data
+x-generated-from: https://cloud.google.com/artifact-registry/docs/reference/rest
+x-generated-by: claude-crawl-2026-05-08

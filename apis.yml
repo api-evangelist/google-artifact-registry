@@ -5,7 +5,20 @@ description: >-
   packages on Google Cloud. It provides a single location for storing and managing artifacts with integration into
   Google Cloud CI/CD tooling, vulnerability scanning, and fine-grained access control.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-artifact-registry.png
 tags:
   - Artifacts
   - Containers
@@ -17,26 +30,175 @@ created: '2026-03-26'
 modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
-  - aid: google-artifact-registry:google-artifact-registry
-    name: Google Artifact Registry
-    description: >-
-      Google Artifact Registry is a universal package manager for managing container images, language packages, and OS
-      packages on Google Cloud with integrated vulnerability scanning and fine-grained access control.
-    humanURL: https://cloud.google.com/artifact-registry
-    tags:
-      - Artifacts
-      - Containers
-      - Packages
-      - Registry
-    properties:
-      - url: openapi/google-artifact-registry-openapi.yml
-        type: OpenAPI
-      - type: Documentation
-        url: https://cloud.google.com/artifact-registry/docs
-      - type: GettingStarted
-        url: https://cloud.google.com/artifact-registry/docs/overview
-      - type: Pricing
-        url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-dockerimages-api
+  name: Google Artifact Registry DockerImages API
+  description: The DockerImages API from Google Artifact Registry — 1 operation(s) for dockerimages.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - DockerImages
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-dockerimages-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-files-api
+  name: Google Artifact Registry Files API
+  description: The Files API from Google Artifact Registry — 1 operation(s) for files.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Files
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-files-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-google-artifact-registry-api-api
+  name: Google Artifact Registry Google Artifact Registry API API
+  description: >-
+    The Google Artifact Registry API API from Google Artifact Registry — 4 operation(s) for google artifact
+    registry api.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Google Artifact Registry API
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-google-artifact-registry-api-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-locations-api
+  name: Google Artifact Registry Locations API
+  description: The Locations API from Google Artifact Registry — 1 operation(s) for locations.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Locations
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-locations-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-mavenartifacts-api
+  name: Google Artifact Registry MavenArtifacts API
+  description: >-
+    The MavenArtifacts API from Google Artifact Registry — 1 operation(s) for mavenartifacts.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - MavenArtifacts
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-mavenartifacts-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-npmpackages-api
+  name: Google Artifact Registry NpmPackages API
+  description: The NpmPackages API from Google Artifact Registry — 1 operation(s) for npmpackages.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - NpmPackages
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-npmpackages-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-packages-api
+  name: Google Artifact Registry Packages API
+  description: The Packages API from Google Artifact Registry — 1 operation(s) for packages.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Packages
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-packages-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-pythonpackages-api
+  name: Google Artifact Registry PythonPackages API
+  description: >-
+    The PythonPackages API from Google Artifact Registry — 1 operation(s) for pythonpackages.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - PythonPackages
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-pythonpackages-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-repositories-api
+  name: Google Artifact Registry Repositories API
+  description: The Repositories API from Google Artifact Registry — 1 operation(s) for repositories.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Repositories
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-repositories-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-tags-api
+  name: Google Artifact Registry Tags API
+  description: The Tags API from Google Artifact Registry — 1 operation(s) for tags.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Tags
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-tags-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
+- aid: google-artifact-registry:google-artifact-registry-versions-api
+  name: Google Artifact Registry Versions API
+  description: The Versions API from Google Artifact Registry — 1 operation(s) for versions.
+  humanURL: https://cloud.google.com/artifact-registry
+  tags:
+  - Versions
+  properties:
+  - type: OpenAPI
+    url: openapi/google-artifact-registry-versions-api-openapi.yml
+  - type: Documentation
+    url: https://cloud.google.com/artifact-registry/docs
+  - type: GettingStarted
+    url: https://cloud.google.com/artifact-registry/docs/overview
+  - type: Pricing
+    url: https://cloud.google.com/artifact-registry/pricing
 common:
   - type: AgenticAccess
     url: agentic-access/google-artifact-registry-agentic-access.yml

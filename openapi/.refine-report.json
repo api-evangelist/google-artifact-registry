@@ -1,0 +1,34 @@
+{
+  "provider": "google-artifact-registry",
+  "sources": [
+    "google-artifact-registry-dockerimages-api-openapi.yml",
+    "google-artifact-registry-files-api-openapi.yml",
+    "google-artifact-registry-google-artifact-registry-api-api-openapi.yml",
+    "google-artifact-registry-locations-api-openapi.yml",
+    "google-artifact-registry-mavenartifacts-api-openapi.yml",
+    "google-artifact-registry-npmpackages-api-openapi.yml",
+    "google-artifact-registry-packages-api-openapi.yml",
+    "google-artifact-registry-pythonpackages-api-openapi.yml",
+    "google-artifact-registry-repositories-api-openapi.yml",
+    "google-artifact-registry-tags-api-openapi.yml",
+    "google-artifact-registry-versions-api-openapi.yml"
+  ],
+  "outputs": [
+    "google-artifact-registry-dockerimages-api-openapi.yml",
+    "google-artifact-registry-files-api-openapi.yml",
+    "google-artifact-registry-google-artifact-registry-api-api-openapi.yml",
+    "google-artifact-registry-locations-api-openapi.yml",
+    "google-artifact-registry-mavenartifacts-api-openapi.yml",
+    "google-artifact-registry-npmpackages-api-openapi.yml",
+    "google-artifact-registry-packages-api-openapi.yml",
+    "google-artifact-registry-pythonpackages-api-openapi.yml",
+    "google-artifact-registry-repositories-api-openapi.yml",
+    "google-artifact-registry-tags-api-openapi.yml",
+    "google-artifact-registry-versions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

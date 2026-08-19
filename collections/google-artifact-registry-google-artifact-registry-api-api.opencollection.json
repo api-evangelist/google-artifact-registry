@@ -1,0 +1,155 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Google Artifact Registry DockerImages Google Artifact Registry API API",
+    "version": "v1"
+  },
+  "request": {
+    "auth": {
+      "type": "oauth2",
+      "flow": "authorization_code",
+      "authorizationUrl": "https://accounts.google.com/o/oauth2/auth",
+      "accessTokenUrl": "https://oauth2.googleapis.com/token",
+      "credentials": {
+        "clientId": "{{clientId}}",
+        "clientSecret": "{{clientSecret}}"
+      }
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Google Artifact Registry API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a resource (project settings, location, vpcsc config, operation)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://artifactregistry.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a resource (project settings, location, vpcsc config, operation)"
+        },
+        {
+          "info": {
+            "name": "Update a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "PATCH",
+            "url": "https://artifactregistry.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              },
+              {
+                "name": "updateMask",
+                "value": "",
+                "type": "query"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Update a resource"
+        },
+        {
+          "info": {
+            "name": "Delete a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://artifactregistry.googleapis.com/v1/:name",
+            "params": [
+              {
+                "name": "name",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Delete a resource"
+        },
+        {
+          "info": {
+            "name": "Set IAM policy on a resource",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://artifactregistry.googleapis.com/v1/:resource:setIamPolicy",
+            "params": [
+              {
+                "name": "resource",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Set IAM policy on a resource"
+        },
+        {
+          "info": {
+            "name": "Get IAM policy",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://artifactregistry.googleapis.com/v1/:resource:getIamPolicy",
+            "params": [
+              {
+                "name": "resource",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get IAM policy"
+        },
+        {
+          "info": {
+            "name": "Test IAM permissions",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://artifactregistry.googleapis.com/v1/:resource:testIamPermissions",
+            "params": [
+              {
+                "name": "resource",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Test IAM permissions"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

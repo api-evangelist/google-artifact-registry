@@ -50,6 +50,8 @@ apis:
   description: The Files API from Google Artifact Registry — 1 operation(s) for files.
   humanURL: https://cloud.google.com/artifact-registry
   tags:
+  - File
+  tags_raw:
   - Files
   properties:
   - type: OpenAPI

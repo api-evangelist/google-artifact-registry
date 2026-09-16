@@ -1,9 +1,8 @@
 aid: google-artifact-registry
 name: Google Artifact Registry
-description: >-
-  Google Artifact Registry is a universal package manager for managing container images, language packages, and OS
-  packages on Google Cloud. It provides a single location for storing and managing artifacts with integration into
-  Google Cloud CI/CD tooling, vulnerability scanning, and fine-grained access control.
+description: Google Artifact Registry is a universal package manager for managing container images, language
+  packages, and OS packages on Google Cloud. It provides a single location for storing and managing artifacts
+  with integration into Google Cloud CI/CD tooling, vulnerability scanning, and fine-grained access control.
 type: Index
 deliveryModel:
   model: saas
@@ -32,14 +31,14 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/google-artifact-registry.png
 tags:
-  - Artifacts
-  - Containers
-  - Google Cloud
-  - Packages
-  - Registry
+- Artifacts
+- Containers
+- Google Cloud
+- Packages
+- Registry
 url: https://raw.githubusercontent.com/api-evangelist/google-artifact-registry/refs/heads/main/apis.yml
 created: '2026-03-26'
-modified: '2026-05-19'
+modified: '2026-09-16'
 specificationVersion: '0.23'
 apis:
 - aid: google-artifact-registry:google-artifact-registry-dockerimages-api
@@ -75,10 +74,9 @@ apis:
   - type: Pricing
     url: https://cloud.google.com/artifact-registry/pricing
 - aid: google-artifact-registry:google-artifact-registry-google-artifact-registry-api-api
-  name: Google Artifact Registry Google Artifact Registry API API
-  description: >-
-    The Google Artifact Registry API API from Google Artifact Registry — 4 operation(s) for google artifact
-    registry api.
+  name: Google Artifact Registry Google Artifact Registry API
+  description: The Google Artifact Registry API API from Google Artifact Registry — 4 operation(s) for
+    google artifact registry api.
   humanURL: https://cloud.google.com/artifact-registry
   tags:
   - Google Artifact Registry API
@@ -108,8 +106,7 @@ apis:
     url: https://cloud.google.com/artifact-registry/pricing
 - aid: google-artifact-registry:google-artifact-registry-mavenartifacts-api
   name: Google Artifact Registry MavenArtifacts API
-  description: >-
-    The MavenArtifacts API from Google Artifact Registry — 1 operation(s) for mavenartifacts.
+  description: The MavenArtifacts API from Google Artifact Registry — 1 operation(s) for mavenartifacts.
   humanURL: https://cloud.google.com/artifact-registry
   tags:
   - MavenArtifacts
@@ -154,8 +151,7 @@ apis:
     url: https://cloud.google.com/artifact-registry/pricing
 - aid: google-artifact-registry:google-artifact-registry-pythonpackages-api
   name: Google Artifact Registry PythonPackages API
-  description: >-
-    The PythonPackages API from Google Artifact Registry — 1 operation(s) for pythonpackages.
+  description: The PythonPackages API from Google Artifact Registry — 1 operation(s) for pythonpackages.
   humanURL: https://cloud.google.com/artifact-registry
   tags:
   - PythonPackages
@@ -214,36 +210,36 @@ apis:
   - type: Pricing
     url: https://cloud.google.com/artifact-registry/pricing
 common:
-  - type: AgenticAccess
-    url: agentic-access/google-artifact-registry-agentic-access.yml
-  - type: VulnerabilityDisclosure
-    url: security/google-artifact-registry-vulnerability-disclosure.yml
-  - type: DomainSecurity
-    url: security/google-artifact-registry-domain-security.yml
-  - type: Authentication
-    url: authentication/google-artifact-registry-authentication.yml
-  - type: OAuthScopes
-    url: scopes/google-artifact-registry-scopes.yml
-  - type: Website
-    url: https://cloud.google.com/artifact-registry
-  - type: Documentation
-    url: https://cloud.google.com/artifact-registry/docs
-  - type: GettingStarted
-    url: https://cloud.google.com/artifact-registry/docs/overview
-  - type: GitHubOrganization
-    url: https://github.com/googleapis
-  - type: Pricing
-    url: https://cloud.google.com/artifact-registry/pricing
-  - type: Blog
-    url: https://cloud.google.com/blog/
-  - type: StatusPage
-    url: https://status.cloud.google.com/
-  - type: Signup
-    url: https://cloud.google.com/free
-  - type: Integrations
-    url: https://cloud.google.com/marketplace
+- type: AgenticAccess
+  url: agentic-access/google-artifact-registry-agentic-access.yml
+- type: VulnerabilityDisclosure
+  url: security/google-artifact-registry-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/google-artifact-registry-domain-security.yml
+- type: Authentication
+  url: authentication/google-artifact-registry-authentication.yml
+- type: OAuthScopes
+  url: scopes/google-artifact-registry-scopes.yml
+- type: Website
+  url: https://cloud.google.com/artifact-registry
+- type: Documentation
+  url: https://cloud.google.com/artifact-registry/docs
+- type: GettingStarted
+  url: https://cloud.google.com/artifact-registry/docs/overview
+- type: GitHubOrganization
+  url: https://github.com/googleapis
+- type: Pricing
+  url: https://cloud.google.com/artifact-registry/pricing
+- type: Blog
+  url: https://cloud.google.com/blog/
+- type: StatusPage
+  url: https://status.cloud.google.com/
+- type: Signup
+  url: https://cloud.google.com/free
+- type: Integrations
+  url: https://cloud.google.com/marketplace
 integrations:
-  - name: Become a Partner
+- name: Become a Partner
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com

@@ -94,6 +94,8 @@ apis:
   description: The Locations API from Google Artifact Registry — 1 operation(s) for locations.
   humanURL: https://cloud.google.com/artifact-registry
   tags:
+  - Location
+  tags_raw:
   - Locations
   properties:
   - type: OpenAPI

@@ -1,17 +1,7 @@
 {
   "provider": "google-artifact-registry",
   "sources": [
-    "google-artifact-registry-dockerimages-api-openapi.yml",
-    "google-artifact-registry-files-api-openapi.yml",
-    "google-artifact-registry-google-artifact-registry-api-api-openapi.yml",
-    "google-artifact-registry-locations-api-openapi.yml",
-    "google-artifact-registry-mavenartifacts-api-openapi.yml",
-    "google-artifact-registry-npmpackages-api-openapi.yml",
-    "google-artifact-registry-packages-api-openapi.yml",
-    "google-artifact-registry-pythonpackages-api-openapi.yml",
-    "google-artifact-registry-repositories-api-openapi.yml",
-    "google-artifact-registry-tags-api-openapi.yml",
-    "google-artifact-registry-versions-api-openapi.yml"
+    "_ae-authored/google-artifact-registry-openapi.yml"
   ],
   "outputs": [
     "google-artifact-registry-dockerimages-api-openapi.yml",
@@ -29,6 +19,51 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "google-artifact-registry-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{name} -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: tagged paths PATCH /v1/{name} -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: tagged paths DELETE /v1/{name} -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/locations -> Locations",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/repositories -> Repositories",
+    "google-artifact-registry-openapi.yml: tagged paths POST /v1/{parent}/repositories -> Repositories",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/packages -> Packages",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/versions -> Versions",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/tags -> Tags",
+    "google-artifact-registry-openapi.yml: tagged paths POST /v1/{parent}/tags -> Tags",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/files -> Files",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/dockerImages -> DockerImages",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/mavenArtifacts -> MavenArtifacts",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/npmPackages -> NpmPackages",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{parent}/pythonPackages -> PythonPackages",
+    "google-artifact-registry-openapi.yml: tagged paths POST /v1/{resource}:setIamPolicy -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: tagged paths GET /v1/{resource}:getIamPolicy -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: tagged paths POST /v1/{resource}:testIamPermissions -> Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: declared missing tag: DockerImages",
+    "google-artifact-registry-openapi.yml: declared missing tag: Files",
+    "google-artifact-registry-openapi.yml: declared missing tag: Google Artifact Registry API",
+    "google-artifact-registry-openapi.yml: declared missing tag: Locations",
+    "google-artifact-registry-openapi.yml: declared missing tag: MavenArtifacts",
+    "google-artifact-registry-openapi.yml: declared missing tag: NpmPackages",
+    "google-artifact-registry-openapi.yml: declared missing tag: Packages",
+    "google-artifact-registry-openapi.yml: declared missing tag: PythonPackages",
+    "google-artifact-registry-openapi.yml: declared missing tag: Repositories",
+    "google-artifact-registry-openapi.yml: declared missing tag: Tags",
+    "google-artifact-registry-openapi.yml: declared missing tag: Versions",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "google-artifact-registry-dockerimages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-google-artifact-registry-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-locations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-mavenartifacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-npmpackages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-packages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-pythonpackages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-repositories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-versions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

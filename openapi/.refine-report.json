@@ -1,7 +1,8 @@
 {
   "provider": "google-artifact-registry",
   "sources": [
-    "_ae-authored/google-artifact-registry-openapi.yml"
+    "_ae-authored/google-artifact-registry-openapi.yml",
+    "google-cloud-artifact-registry-projects-api-openapi.yml"
   ],
   "outputs": [
     "google-artifact-registry-dockerimages-api-openapi.yml",
@@ -14,9 +15,12 @@
     "google-artifact-registry-pythonpackages-api-openapi.yml",
     "google-artifact-registry-repositories-api-openapi.yml",
     "google-artifact-registry-tags-api-openapi.yml",
-    "google-artifact-registry-versions-api-openapi.yml"
+    "google-artifact-registry-versions-api-openapi.yml",
+    "google-artifact-registry-projects-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "archived openapi/google-cloud-artifact-registry-projects-api-openapi.yml"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -51,7 +55,7 @@
     "google-artifact-registry-openapi.yml: declared missing tag: Repositories",
     "google-artifact-registry-openapi.yml: declared missing tag: Tags",
     "google-artifact-registry-openapi.yml: declared missing tag: Versions",
-    "apis.yml register: already-registered"
+    "apis.yml register: written (+1 apis, 12 total)"
   ],
   "skipped": [
     "google-artifact-registry-dockerimages-api-openapi.yml: previously refined output, superseded by openapi/_original/",

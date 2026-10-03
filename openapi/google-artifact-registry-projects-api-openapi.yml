@@ -242,6 +242,50 @@ paths:
       - Projects
 components:
   schemas:
+    Operation:
+      type: object
+      description: A long-running operation.
+      properties:
+        name:
+          type: string
+        done:
+          type: boolean
+        error:
+          type: object
+        response:
+          type: object
+    ListPackagesResponse:
+      type: object
+      properties:
+        packages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Package'
+        nextPageToken:
+          type: string
+    DockerImage:
+      type: object
+      description: A Docker image stored in a repository.
+      properties:
+        name:
+          type: string
+        uri:
+          type: string
+          description: The URI of the Docker image.
+        tags:
+          type: array
+          items:
+            type: string
+        imageSizeBytes:
+          type: string
+        mediaType:
+          type: string
+        uploadTime:
+          type: string
+          format: date-time
+        buildTime:
+          type: string
+          format: date-time
     Repository:
       type: object
       description: A repository for storing artifacts.
@@ -284,66 +328,6 @@ components:
           - STANDARD_REPOSITORY
           - VIRTUAL_REPOSITORY
           - REMOTE_REPOSITORY
-    Package:
-      type: object
-      description: A package within a repository.
-      properties:
-        name:
-          type: string
-          description: The name of the package.
-        displayName:
-          type: string
-          description: The display name of the package.
-        createTime:
-          type: string
-          format: date-time
-        updateTime:
-          type: string
-          format: date-time
-    ListPackagesResponse:
-      type: object
-      properties:
-        packages:
-          type: array
-          items:
-            $ref: '#/components/schemas/Package'
-        nextPageToken:
-          type: string
-    Operation:
-      type: object
-      description: A long-running operation.
-      properties:
-        name:
-          type: string
-        done:
-          type: boolean
-        error:
-          type: object
-        response:
-          type: object
-    DockerImage:
-      type: object
-      description: A Docker image stored in a repository.
-      properties:
-        name:
-          type: string
-        uri:
-          type: string
-          description: The URI of the Docker image.
-        tags:
-          type: array
-          items:
-            type: string
-        imageSizeBytes:
-          type: string
-        mediaType:
-          type: string
-        uploadTime:
-          type: string
-          format: date-time
-        buildTime:
-          type: string
-          format: date-time
     ListRepositoriesResponse:
       type: object
       properties:
@@ -362,6 +346,22 @@ components:
             $ref: '#/components/schemas/DockerImage'
         nextPageToken:
           type: string
+    Package:
+      type: object
+      description: A package within a repository.
+      properties:
+        name:
+          type: string
+          description: The name of the package.
+        displayName:
+          type: string
+          description: The display name of the package.
+        createTime:
+          type: string
+          format: date-time
+        updateTime:
+          type: string
+          format: date-time
     ListLocationsResponse:
       type: object
       properties:

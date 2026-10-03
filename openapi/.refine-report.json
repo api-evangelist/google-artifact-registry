@@ -1,10 +1,11 @@
 {
   "provider": "google-artifact-registry",
   "sources": [
-    "_ae-authored/google-artifact-registry-openapi.yml",
-    "google-cloud-artifact-registry-projects-api-openapi.yml"
+    "_original/google-cloud-artifact-registry-projects-api-openapi.yml",
+    "_ae-authored/google-artifact-registry-openapi.yml"
   ],
   "outputs": [
+    "google-artifact-registry-projects-api-openapi.yml",
     "google-artifact-registry-dockerimages-api-openapi.yml",
     "google-artifact-registry-files-api-openapi.yml",
     "google-artifact-registry-google-artifact-registry-api-api-openapi.yml",
@@ -15,16 +16,13 @@
     "google-artifact-registry-pythonpackages-api-openapi.yml",
     "google-artifact-registry-repositories-api-openapi.yml",
     "google-artifact-registry-tags-api-openapi.yml",
-    "google-artifact-registry-versions-api-openapi.yml",
-    "google-artifact-registry-projects-api-openapi.yml"
+    "google-artifact-registry-versions-api-openapi.yml"
   ],
-  "archived": [
-    "archived openapi/google-cloud-artifact-registry-projects-api-openapi.yml"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
-    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "google-artifact-registry-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "google-artifact-registry-openapi.yml: tagged paths GET /v1/{name} -> Google Artifact Registry API",
     "google-artifact-registry-openapi.yml: tagged paths PATCH /v1/{name} -> Google Artifact Registry API",
@@ -55,7 +53,7 @@
     "google-artifact-registry-openapi.yml: declared missing tag: Repositories",
     "google-artifact-registry-openapi.yml: declared missing tag: Tags",
     "google-artifact-registry-openapi.yml: declared missing tag: Versions",
-    "apis.yml register: written (+1 apis, 12 total)"
+    "apis.yml register: already-registered"
   ],
   "skipped": [
     "google-artifact-registry-dockerimages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
@@ -65,6 +63,7 @@
     "google-artifact-registry-mavenartifacts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "google-artifact-registry-npmpackages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "google-artifact-registry-packages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "google-artifact-registry-projects-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "google-artifact-registry-pythonpackages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "google-artifact-registry-repositories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "google-artifact-registry-tags-api-openapi.yml: previously refined output, superseded by openapi/_original/",

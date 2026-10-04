@@ -242,27 +242,22 @@ paths:
       - Projects
 components:
   schemas:
-    Operation:
+    Package:
       type: object
-      description: A long-running operation.
+      description: A package within a repository.
       properties:
         name:
           type: string
-        done:
-          type: boolean
-        error:
-          type: object
-        response:
-          type: object
-    ListPackagesResponse:
-      type: object
-      properties:
-        packages:
-          type: array
-          items:
-            $ref: '#/components/schemas/Package'
-        nextPageToken:
+          description: The name of the package.
+        displayName:
           type: string
+          description: The display name of the package.
+        createTime:
+          type: string
+          format: date-time
+        updateTime:
+          type: string
+          format: date-time
     DockerImage:
       type: object
       description: A Docker image stored in a repository.
@@ -286,6 +281,54 @@ components:
         buildTime:
           type: string
           format: date-time
+    ListPackagesResponse:
+      type: object
+      properties:
+        packages:
+          type: array
+          items:
+            $ref: '#/components/schemas/Package'
+        nextPageToken:
+          type: string
+    ListRepositoriesResponse:
+      type: object
+      properties:
+        repositories:
+          type: array
+          items:
+            $ref: '#/components/schemas/Repository'
+        nextPageToken:
+          type: string
+    Operation:
+      type: object
+      description: A long-running operation.
+      properties:
+        name:
+          type: string
+        done:
+          type: boolean
+        error:
+          type: object
+        response:
+          type: object
+    ListDockerImagesResponse:
+      type: object
+      properties:
+        dockerImages:
+          type: array
+          items:
+            $ref: '#/components/schemas/DockerImage'
+        nextPageToken:
+          type: string
+    ListLocationsResponse:
+      type: object
+      properties:
+        locations:
+          type: array
+          items:
+            type: object
+        nextPageToken:
+          type: string
     Repository:
       type: object
       description: A repository for storing artifacts.
@@ -328,49 +371,6 @@ components:
           - STANDARD_REPOSITORY
           - VIRTUAL_REPOSITORY
           - REMOTE_REPOSITORY
-    ListRepositoriesResponse:
-      type: object
-      properties:
-        repositories:
-          type: array
-          items:
-            $ref: '#/components/schemas/Repository'
-        nextPageToken:
-          type: string
-    ListDockerImagesResponse:
-      type: object
-      properties:
-        dockerImages:
-          type: array
-          items:
-            $ref: '#/components/schemas/DockerImage'
-        nextPageToken:
-          type: string
-    Package:
-      type: object
-      description: A package within a repository.
-      properties:
-        name:
-          type: string
-          description: The name of the package.
-        displayName:
-          type: string
-          description: The display name of the package.
-        createTime:
-          type: string
-          format: date-time
-        updateTime:
-          type: string
-          format: date-time
-    ListLocationsResponse:
-      type: object
-      properties:
-        locations:
-          type: array
-          items:
-            type: object
-        nextPageToken:
-          type: string
 externalDocs:
   description: Google Cloud Artifact Registry Documentation
   url: https://cloud.google.com/artifact-registry/docs

@@ -1,0 +1,14 @@
+fetched: '2026-10-13'
+method: fetched
+source: https://cloud.google.com/artifact-registry/docs/supported-formats
+page: https://cloud.google.com/artifact-registry/docs/supported-formats
+file: google-artifact-registry-oci-distribution-1.md
+bytes: 12560
+sha256: 34e9306717913053b7c3b80001f16b228e096151a8dad10e9e70555aa595d1c8
+anchor: open-container-initiative
+shape: oci-distribution
+classification: declares-compatibility
+quote: The OCI image format is a specification for container images based on the Docker Image Manifest Version 2,
+  Schema 2 format. Artifact Registry implements the OCI Specification , an API protocol to help standardize distribution
+  of content.
+note: text extracted from the provider's own page (tags stripped), saved for evidence

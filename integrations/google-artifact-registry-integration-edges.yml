@@ -1,0 +1,20 @@
+edges:
+- partner_name: Open Container Initiative
+  partner: open-container-initiative
+  partner_match: shape-anchor
+  channel: provider-built
+  relationship: compatible
+  direction: provider-built
+  shape: oci-distribution
+  type: docs
+  degree: full
+  evidence: https://cloud.google.com/artifact-registry/docs/supported-formats
+  evidence_kind: own-docs
+  evidence_file: https://github.com/api-evangelist/google-artifact-registry/blob/main/evidence/compatibility/google-artifact-registry-oci-distribution-1.md
+  quote: The OCI image format is a specification for container images based on the Docker Image Manifest Version
+    2, Schema 2 format. Artifact Registry implements the OCI Specification , an API protocol to help standardize
+    distribution of content.
+  detected_by: sweep-shape-compat.py
+  first_seen: '2026-10-13'
+generated: '2026-10-13'
+method: searched

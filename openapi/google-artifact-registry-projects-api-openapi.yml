@@ -258,29 +258,6 @@ components:
         updateTime:
           type: string
           format: date-time
-    DockerImage:
-      type: object
-      description: A Docker image stored in a repository.
-      properties:
-        name:
-          type: string
-        uri:
-          type: string
-          description: The URI of the Docker image.
-        tags:
-          type: array
-          items:
-            type: string
-        imageSizeBytes:
-          type: string
-        mediaType:
-          type: string
-        uploadTime:
-          type: string
-          format: date-time
-        buildTime:
-          type: string
-          format: date-time
     ListPackagesResponse:
       type: object
       properties:
@@ -288,15 +265,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Package'
-        nextPageToken:
-          type: string
-    ListRepositoriesResponse:
-      type: object
-      properties:
-        repositories:
-          type: array
-          items:
-            $ref: '#/components/schemas/Repository'
         nextPageToken:
           type: string
     Operation:
@@ -311,13 +279,13 @@ components:
           type: object
         response:
           type: object
-    ListDockerImagesResponse:
+    ListRepositoriesResponse:
       type: object
       properties:
-        dockerImages:
+        repositories:
           type: array
           items:
-            $ref: '#/components/schemas/DockerImage'
+            $ref: '#/components/schemas/Repository'
         nextPageToken:
           type: string
     ListLocationsResponse:
@@ -371,6 +339,38 @@ components:
           - STANDARD_REPOSITORY
           - VIRTUAL_REPOSITORY
           - REMOTE_REPOSITORY
+    ListDockerImagesResponse:
+      type: object
+      properties:
+        dockerImages:
+          type: array
+          items:
+            $ref: '#/components/schemas/DockerImage'
+        nextPageToken:
+          type: string
+    DockerImage:
+      type: object
+      description: A Docker image stored in a repository.
+      properties:
+        name:
+          type: string
+        uri:
+          type: string
+          description: The URI of the Docker image.
+        tags:
+          type: array
+          items:
+            type: string
+        imageSizeBytes:
+          type: string
+        mediaType:
+          type: string
+        uploadTime:
+          type: string
+          format: date-time
+        buildTime:
+          type: string
+          format: date-time
 externalDocs:
   description: Google Cloud Artifact Registry Documentation
   url: https://cloud.google.com/artifact-registry/docs

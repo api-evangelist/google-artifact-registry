@@ -1,4 +1,4 @@
-# Google Artifact Registry (google-artifact-registry)
+# Google Artifact Registry
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,62 +66,147 @@
 
 Google Artifact Registry is a universal package manager for managing container images, language packages, and OS packages on Google Cloud. It provides a single location for storing and managing artifacts with integration into Google Cloud CI/CD tooling, vulnerability scanning, and fine-grained access control.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/google-artifact-registry/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/google-artifact-registry/refs/heads/main/apis.yml)
+**Areas:** Artifacts · Containers · Google Cloud · Packages · Registry
 
-## Scope
+## Google Artifact Registry on APIs.io
 
-- **Type:** Index
+Everything profiled for Google Artifact Registry is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/google-artifact-registry/](https://apis.io/providers/google-artifact-registry/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (12)
 
-- Artifacts
-- Containers
-- Google Cloud
-- Packages
-- Registry
+- [Google Artifact Registry DockerImages API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-dockerimages-api/) — The DockerImages API from Google Artifact Registry — 1 operation(s) for dockerimages.
+- [Google Artifact Registry Files API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-files-api/) — The Files API from Google Artifact Registry — 1 operation(s) for files.
+- [Google Artifact Registry Google Artifact Registry API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-google-artifact-registry-api-api/) — The Google Artifact Registry API API from Google Artifact Registry — 4 operation(s) for google artifact registry api.
+- [Google Artifact Registry Locations API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-locations-api/) — The Locations API from Google Artifact Registry — 1 operation(s) for locations.
+- [Google Artifact Registry MavenArtifacts API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-mavenartifacts-api/) — The MavenArtifacts API from Google Artifact Registry — 1 operation(s) for mavenartifacts.
+- [Google Artifact Registry NpmPackages API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-npmpackages-api/) — The NpmPackages API from Google Artifact Registry — 1 operation(s) for npmpackages.
+- [Google Artifact Registry Packages API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-packages-api/) — The Packages API from Google Artifact Registry — 1 operation(s) for packages.
+- [Google Artifact Registry PythonPackages API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-pythonpackages-api/) — The PythonPackages API from Google Artifact Registry — 1 operation(s) for pythonpackages.
+- [Google Artifact Registry Repositories API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-repositories-api/) — The Repositories API from Google Artifact Registry — 1 operation(s) for repositories.
+- [Google Artifact Registry Tags API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-tags-api/) — The Tags API from Google Artifact Registry — 1 operation(s) for tags.
+- [Google Artifact Registry Versions API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-versions-api/) — The Versions API from Google Artifact Registry — 1 operation(s) for versions.
+- [Google Artifact Registry Projects API](https://apis.io/apis/google-artifact-registry/google-artifact-registry-projects-api/) — The Projects API from Google Artifact Registry — 5 operation(s) for projects.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-26
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Google Artifact Registry
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Google Artifact Registry is a universal package manager for managing container images, language packages, and OS packages on Google Cloud with integrated vulnerability scanning and fine-grained access control.
+- [Google Artifact Registry Agentic Access](https://apis.io/agentic-access/google-artifact-registry/google-artifact-registry-agentic-access/)
 
-- **Human URL:** [https://cloud.google.com/artifact-registry](https://cloud.google.com/artifact-registry)
+#### Collections (12)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Artifacts
-- Containers
-- Packages
-- Registry
+- [Google Artifact Registry API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry/)
+- [Google Artifact Registry DockerImages API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-dockerimages-api/)
+- [Google Artifact Registry DockerImages Files API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-files-api/)
+- [Google Artifact Registry DockerImages Google Artifact Registry API API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-google-artifact-registry-api-api/)
+- [Google Artifact Registry DockerImages Locations API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-locations-api/)
+- [Google Artifact Registry DockerImages MavenArtifacts API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-mavenartifacts-api/)
+- [Google Artifact Registry DockerImages NpmPackages API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-npmpackages-api/)
+- [Google Artifact Registry DockerImages Packages API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-packages-api/)
+- [Google Artifact Registry DockerImages PythonPackages API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-pythonpackages-api/)
+- [Google Artifact Registry DockerImages Repositories API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-repositories-api/)
+- [Google Artifact Registry DockerImages Tags API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-tags-api/)
+- [Google Artifact Registry DockerImages Versions API](https://apis.io/collections/google-artifact-registry/open-google-artifact-registry-versions-api/)
 
-#### Properties
+#### Security (3)
 
-- [OpenAPI](openapi/google-artifact-registry-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/google-artifact-registry.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/google-artifact-registry.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Documentation](https://cloud.google.com/artifact-registry/docs)
-- [Getting Started](https://cloud.google.com/artifact-registry/docs/overview)
-- [Pricing](https://cloud.google.com/artifact-registry/pricing)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Google Artifact Registry Authentication](https://apis.io/security/google-artifact-registry/google-artifact-registry-authentication/)
+- [Google Artifact Registry Domain Security](https://apis.io/security/google-artifact-registry/google-artifact-registry-domain-security/)
+- [Google Artifact Registry Vulnerability Disclosure](https://apis.io/security/google-artifact-registry/google-artifact-registry-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Google Artifact Registry Scopes](https://apis.io/scopes/google-artifact-registry/google-artifact-registry-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Google Artifact Registry Plans Pricing](https://apis.io/plans/google-artifact-registry/google-artifact-registry-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Google Artifact Registry Rate Limits](https://apis.io/rate-limits/google-artifact-registry/google-artifact-registry-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Google Artifact Registry Finops](https://apis.io/finops/google-artifact-registry/google-artifact-registry-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://cloud.google.com/artifact-registry)
 - [Documentation](https://cloud.google.com/artifact-registry/docs)
-- [Getting Started](https://cloud.google.com/artifact-registry/docs/overview)
-- [GitHub Organization](https://github.com/googleapis)
+- [Getting started](https://cloud.google.com/artifact-registry/docs/overview)
 - [Pricing](https://cloud.google.com/artifact-registry/pricing)
 - [Blog](https://cloud.google.com/blog/)
-- [Status Page](https://status.cloud.google.com/)
-- [Sign Up](https://cloud.google.com/free)
-- [Integrations](https://cloud.google.com/marketplace)
+- [GitHub](https://github.com/googleapis)
+- [Status](https://status.cloud.google.com/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 35.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 46.8 |
+| Contract governance | 0.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 31.6 |
+
+**Agent readiness 22.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/google-artifact-registry/](https://apis.io/providers/google-artifact-registry/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Google Artifact Registry: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/google-artifact-registry/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
